@@ -13,7 +13,9 @@ shinyUI(fluidPage(
                 choices = c("line", "scatter", "both"),
                 selected = "both",
                 inline = TRUE
-            )
+            ),
+            
+            dateRangeInput("date_range", label = h3("Date range"))
         ),
 
         mainPanel(
