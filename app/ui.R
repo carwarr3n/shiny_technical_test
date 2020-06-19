@@ -15,7 +15,9 @@ shinyUI(fluidPage(
                 inline = TRUE
             ),
             
-            dateRangeInput("date_range", label = h3("Date range"))
+            dateRangeInput("date_range", label = h3("Date range"),
+                           min = "2019-05-01",
+                           max = "2020-06-10")
         ),
 
         mainPanel(
